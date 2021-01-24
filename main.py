@@ -24,5 +24,11 @@ from TelefonesBR import TelefonesBr
 # resposta = re.search(padrao, texto)
 # print(resposta.group())
 
-telefone = "2126481234"
+telefone = "3512126481234"
 telefone_objeto = TelefonesBr(telefone)
+# padrao = "([0-9]{2,3})?([0-9]{2})?([0-9]{4,5})([0-9]{4})" 
+
+# resposta = re.findall(padrao, telefone)
+# resposta = re.search(padrao, telefone)
+# print(resposta.group(2))
+print(telefone_objeto)
