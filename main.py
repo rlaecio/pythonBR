@@ -7,28 +7,20 @@ from TelefonesBR import TelefonesBr
 
 # documento = Documento.cria_documento(exemplo_cnpj)
 # print(documento)
+from datetime import datetime, timedelta
+from Datas_BR import DatasBr
+
+cadastro = DatasBr()
+print(cadastro)
+
+# print(cadastro.momento_cadastro)
+# print(cadastro.mes_cadastro())
+# print(cadastro.dia_semana())
+
+# hoje = datetime.today()
+# data_formatada = hoje.strftime("%d/%m/%Y")
+# print(data_formatada)
 
 
-
-## teste regex 01
-# padrao = "[0-9][a-z]{2}[0-9]"
-# texto = "123 1ac2 1cc aa1"
-
-# resposta = re.search(padrao, texto)
-# print(resposta.group())
-
-## teste regex email
-# padrao = "\w{5,50}@\w{3,10}.\w{2,3}.\w{2,3}"
-# texto = "alkdjshfa adsfljk rlaecio@hotmail.com lh ;lkjdsf"
-
-# resposta = re.search(padrao, texto)
-# print(resposta.group())
-
-telefone = "3512126481234"
-telefone_objeto = TelefonesBr(telefone)
-# padrao = "([0-9]{2,3})?([0-9]{2})?([0-9]{4,5})([0-9]{4})" 
-
-# resposta = re.findall(padrao, telefone)
-# resposta = re.search(padrao, telefone)
-# print(resposta.group(2))
-print(telefone_objeto)
+hoje = DatasBr()
+print(hoje.tempo_cadastro())
